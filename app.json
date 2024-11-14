@@ -1,13 +1,13 @@
 {
     "name": "ANWI VIBES",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "logo": "https://files.catbox.moe/ck1ua3.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "AnonX",
-    "MusicBot",
+    "AnwiVibes",
+    "AnwiVibesBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -34,7 +34,7 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "6922271843",
+        "value": "1679112664",
         "required": true
       },
       "STRING_SESSION": {
