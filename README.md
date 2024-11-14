@@ -36,7 +36,7 @@ Reach out to the maintainer at one of the following places:
 - Contact  [Telegram profile](https://t.me/OfficialDurgesh )
 - [Telegram Support](https://t.me/+7ehnJA3aMb84OGNl)
 
-If you want to say **thank you** or/and support active development of TanuMusicBot:
+If you want to say **thank you** or/and support active development of ANWI VIBES BOT:
 
 - Add a [GitHub Star](https://github.com/IamDvis/DV-VIBES) to the project.
 
