@@ -20,35 +20,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="ANWIVIBES1",
+            name="AnwiAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="ANWIVIBES2",
+            name="AnwiAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="ANWIVIBES3",
+            name="AnwiAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="ANWIVIBES4",
+            name="AnwiAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="ANWIVIBES5",
+            name="AnwiAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -56,7 +56,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"❖ Starting Assistants...")
+        LOGGER(__name__).info(f"❖ Starting Assistants...🧡")
         if config.STRING1:
             await self.one.start()
             try:
@@ -163,7 +163,7 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Five Started as {self.five.name}")
 
     async def stop(self):
-        LOGGER(__name__).info(f"❖ Stopping Assistants...")
+        LOGGER(__name__).info(f"❖ Stopping Assistants...😞")
         try:
             if config.STRING1:
                 await self.one.stop()
