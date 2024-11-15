@@ -16,7 +16,7 @@ from ANWIVIBES.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
-@app.on_callback_query(filters.regex(["liveStream", "live"]) & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("liveStream") & ~BANNED_USERS)
 @languageCB
 async def play_live_stream(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
