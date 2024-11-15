@@ -59,7 +59,7 @@ async def init():
         pass
     await ANWI.decorators()
     LOGGER("ANWIVIBES").info(
-        "✦ Created By ➥ The Captain...🐝"
+        "✦ Created By ➥ The Dvis...🐝"
     )
     await idle()
     await app.stop()
