@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from ANWIVIBES.core.bot import ANWI
+from ANWIVIBES.core.bot import Anwi
 from ANWIVIBES.core.dir import dirr
 from ANWIVIBES.core.git import git
 from ANWIVIBES.core.userbot import Userbot
@@ -20,7 +20,7 @@ git()
 dbb()
 heroku()
 
-app = ANWI()
+app = Anwi()
 userbot = Userbot()
 
 
