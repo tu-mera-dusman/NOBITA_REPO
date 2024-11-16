@@ -57,6 +57,16 @@
         "value": "",
         "required": true
       }
+      "COOKIES": {
+        "description": "Paste your batbin link.",
+        "value": "https://batbin.me/raw/",
+        "required": true
+      },
+      "COOKIES": {
+        "description": "Paste your batbin link.",
+        "value": "https://batbin.me/raw/",
+        "required": true
+      }
     },
     "buildpacks": [
           {
