@@ -78,7 +78,7 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="ᴜᴘᴅᴀᴛᴇ",
 
-                url=f"t.me/C0DE_SEARCH",
+                url=f"t.me/ai_image_junction",
 
             ),
             InlineKeyboardButton(
@@ -107,7 +107,7 @@ def stream_markup(_, chat_id):
 
                 text="ᴜᴘᴅᴀᴛᴇ",
 
-                url=f"t.me/C0DE_SEARCH",
+                url=f"t.me/ai_image_junction",
 
             ),
             InlineKeyboardButton(
