@@ -11,16 +11,16 @@ API_ID = getenv("API_ID", None)
 API_HASH = getenv("API_HASH", None)
 
 #❖ Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME", "OfficialDurgesh")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "ll_NOBITA_BOT_DEVLOPER_ll")
 
 #❖  Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME", "AnwiVibesBot")
+BOT_USERNAME = getenv("BOT_USERNAME", "Khwahish_Music_bot")
 
 #❖  Don't Add style font 
-BOT_NAME = getenv("BOT_NAME", "ANWI VIBES")
+BOT_NAME = getenv("BOT_NAME", "KHWAHISH MUSIC")
 
 #❖ get Your Assistant User name
-ASSUSERNAME = getenv("ASSUSERNAME", "ANWIS VIBER")
+ASSUSERNAME = getenv("ASSUSERNAME", "KHWAHISH MUSIC")
 
 #❖ Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
@@ -47,7 +47,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/IamDvis/DV-VIBES",
+    "https://github.com/tu-mera-dusman/NOBITA_REPO",
 )
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
@@ -56,8 +56,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  #❖ Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ai_image_junction")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+7ehnJA3aMb84OGNl")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NOBITA_ALL_BOT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/NOBITA_SUPPORT")
 
 #❖ Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -95,21 +95,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/6jv7ky.jpg"
+    "START_IMG_URL", "https://envs.sh/Shn.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://envs.sh/qEB.jpg"
+    "PING_IMG_URL", "https://envs.sh/Shn.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/7795e58425337d0455e95.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/v2ri8j.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/d2081243af7c1d7578b7b.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/d2081243af7c1d7578b7b.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/982b01ba53c3d69b0d0ce.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/982b01ba53c3d69b0d0ce.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/d2081243af7c1d7578b7b.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/61024698bfc926e95d57a.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/61024698bfc926e95d57a.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/61024698bfc926e95d57a.jpg"
+PLAYLIST_IMG_URL = "https://envs.sh/Shn.jpg"
+STATS_IMG_URL = "https://envs.sh/Shn.jpg"
+TELEGRAM_AUDIO_URL = "https://envs.sh/Shn.jpg"
+TELEGRAM_VIDEO_URL = "https://envs.sh/Shn.jpg"
+STREAM_IMG_URL = "https://envs.sh/Shn.jpg"
+SOUNCLOUD_IMG_URL = "https://envs.sh/Shn.jpg"
+YOUTUBE_IMG_URL = "https://envs.sh/Shn.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://envs.sh/Shn.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://envs.sh/Shn.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://envs.sh/Shn.jpg"
 
 
 
