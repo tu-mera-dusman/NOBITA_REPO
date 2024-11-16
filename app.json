@@ -58,8 +58,8 @@
         "required": true
       }
       "COOKIES": {
-        "description": "Paste your batbin link.",
-        "value": "https://batbin.me/raw/",
+        "description": "If you have a batbin link then make it True, if you don't have it then make it False",
+        "value": "True",
         "required": true
       },
       "COOKIES": {
