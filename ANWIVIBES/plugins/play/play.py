@@ -31,7 +31,13 @@ from ANWIVIBES.utils.inline import (
 )
 from ANWIVIBES.utils.logger import play_logs
 from ANWIVIBES.utils.stream.stream import stream
-from config import BANNED_USERS, lyrical, ANU
+from config import BANNED_USERS, lyrical
+
+# Bot introduction messages - These can be customized as per your preference
+ANU = [
+    "💞", "🦋", "🔍", "🧪", "🦋", "⚡️", "🔥", "🦋", "🎩", "🌈", "🍷", "🥂", "🦋", "🥃", "🥤", "🕊️",
+    "🦋", "🦋", "🕊️", "🦋", "🕊️", "🦋", "🦋", "🦋", "🪄", "💌", "🦋", "🦋", "🧨"
+]
 
 
 @app.on_message(
