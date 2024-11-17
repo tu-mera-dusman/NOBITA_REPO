@@ -1,19 +1,10 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import SUDOERS
-from ANWIVIBES.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from ANWIVIBES.utils.decorators.language import language
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from NOBITA.utils.decorators.language import language
 from config import BANNED_USERS
 
 
