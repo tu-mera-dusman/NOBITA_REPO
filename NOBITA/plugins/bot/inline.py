@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -15,8 +6,8 @@ from pyrogram.types import (
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS
-from ANWIVIBES import app
-from ANWIVIBES.utils.inlinequery import answer
+from NOBITA import app
+from NOBITA.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
