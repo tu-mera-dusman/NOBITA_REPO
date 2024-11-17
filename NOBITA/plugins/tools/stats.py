@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import platform
 from sys import version as pyver
 
@@ -18,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from ANWIVIBES import app
-from ANWIVIBES.core.userbot import assistants
-from ANWIVIBES.misc import SUDOERS, mongodb
-from ANWIVIBES.plugins import ALL_MODULES
-from ANWIVIBES.utils.database import get_served_chats, get_served_users, get_sudoers
-from ANWIVIBES.utils.decorators.language import language, languageCB
-from ANWIVIBES.utils.inline.stats import back_stats_buttons, stats_buttons
+from NOBITA import app
+from NOBITA.core.userbot import assistants
+from NOBITA.misc import SUDOERS, mongodb
+from NOBITA.plugins import ALL_MODULES
+from NOBITA.utils.database import get_served_chats, get_served_users, get_sudoers
+from NOBITA.utils.decorators.language import language, languageCB
+from NOBITA.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
