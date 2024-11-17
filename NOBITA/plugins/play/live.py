@@ -1,18 +1,9 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 
-from ANWIVIBES import YouTube, app
-from ANWIVIBES.utils.channelplay import get_channeplayCB
-from ANWIVIBES.utils.decorators.language import languageCB
-from ANWIVIBES.utils.stream.stream import stream
+from NOBITA import YouTube, app
+from NOBITA.utils.channelplay import get_channeplayCB
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
