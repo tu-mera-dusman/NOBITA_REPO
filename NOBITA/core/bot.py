@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
@@ -19,7 +10,7 @@ class Anwi(Client):
     def __init__(self):
         LOGGER(__name__).info(f"❖ Starting Bot...♥︎")
         super().__init__(
-            name="ANWIVIBES",
+            name="NOBITA",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
