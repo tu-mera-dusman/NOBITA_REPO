@@ -1,22 +1,13 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import SUDOERS
-from ANWIVIBES.utils import get_readable_time
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils import get_readable_time
+from NOBITA.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -24,8 +15,8 @@ from ANWIVIBES.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from ANWIVIBES.utils.decorators.language import language
-from ANWIVIBES.utils.extraction import extract_user
+from NOBITA.utils.decorators.language import language
+from NOBITA.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
