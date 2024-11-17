@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import os
 import shutil
@@ -19,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from ANWIVIBES import app
-from ANWIVIBES.misc import HAPP, SUDOERS, XCB
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.misc import HAPP, SUDOERS, XCB
+from NOBITA.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ANWIVIBES.utils.decorators.language import language
-from ANWIVIBES.utils.pastebin import Bin
+from NOBITA.utils.decorators.language import language
+from NOBITA.utils.pastebin import Bin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
