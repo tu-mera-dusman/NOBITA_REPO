@@ -1,20 +1,11 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import YouTube, app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils import AdminRightsCheck, seconds_to_min
-from ANWIVIBES.utils.inline import close_markup
+from NOBITA import YouTube, app
+from NOBITA.core.call import NOBITA
+from NOBITA.misc import db
+from NOBITA.utils import AdminRightsCheck, seconds_to_min
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -65,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await ANWI.seek_stream(
+        await NOBITA.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
