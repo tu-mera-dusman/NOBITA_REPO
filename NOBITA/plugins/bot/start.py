@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import time
 import random 
 from pyrogram import filters
@@ -15,10 +6,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ANWIVIBES import app
-from ANWIVIBES.misc import _boot_
-from ANWIVIBES.plugins.sudo.sudoers import sudoers_list
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.misc import _boot_
+from NOBITA.plugins.sudo.sudoers import sudoers_list
+from NOBITA.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -26,9 +17,9 @@ from ANWIVIBES.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from ANWIVIBES.utils.decorators.language import LanguageStart
-from ANWIVIBES.utils.formatters import get_readable_time
-from ANWIVIBES.utils.inline import help_pannel, private_panel, start_panel
+from NOBITA.utils.decorators.language import LanguageStart
+from NOBITA.utils.formatters import get_readable_time
+from NOBITA.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
