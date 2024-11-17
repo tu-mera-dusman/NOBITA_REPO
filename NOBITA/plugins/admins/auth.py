@@ -1,25 +1,16 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.utils import extract_user, int_to_alpha
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.utils import extract_user, int_to_alpha
+from NOBITA.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from ANWIVIBES.utils.decorators import AdminActual, language
-from ANWIVIBES.utils.inline import close_markup
+from NOBITA.utils.decorators import AdminActual, language
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
