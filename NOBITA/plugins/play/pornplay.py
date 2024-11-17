@@ -1,22 +1,13 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 import requests, random
 from bs4 import BeautifulSoup
-from ANWIVIBES import app
+from NOBITA import app
 import pytgcalls
 import os, yt_dlp 
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from pytgcalls.types import AudioVideoPiped
-from ANWIVIBES.plugins.play import play
-from ANWIVIBES.plugins.play.pornplay import play
+from NOBITA.plugins.play import play
+from NOBITA.plugins.play.pornplay import play
 
 #####
 
