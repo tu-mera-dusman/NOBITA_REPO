@@ -1,16 +1,7 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.database import get_active_chats, is_music_playing
+from NOBITA.misc import db
+from NOBITA.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
