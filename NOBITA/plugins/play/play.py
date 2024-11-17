@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import random
 import string
 
@@ -15,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ANWIVIBES import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.utils import seconds_to_min, time_to_seconds
-from ANWIVIBES.utils.channelplay import get_channeplayCB
-from ANWIVIBES.utils.decorators.language import languageCB
-from ANWIVIBES.utils.decorators.play import PlayWrapper
-from ANWIVIBES.utils.formatters import formats
-from ANWIVIBES.utils.inline import (
+from NOBITA import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from NOBITA.core.call import NOBITA
+from NOBITA.utils import seconds_to_min, time_to_seconds
+from NOBITA.utils.channelplay import get_channeplayCB
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.decorators.play import PlayWrapper
+from NOBITA.utils.formatters import formats
+from NOBITA.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ANWIVIBES.utils.logger import play_logs
-from ANWIVIBES.utils.stream.stream import stream
+from NOBITA.utils.logger import play_logs
+from NOBITA.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 # Bot introduction messages - These can be customized as per your preference
@@ -304,7 +295,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await ANWI.stream_call(url)
+                await NOBITA.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
