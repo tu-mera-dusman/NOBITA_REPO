@@ -1,21 +1,12 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import random
 
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.decorators import AdminRightsCheck
-from ANWIVIBES.utils.inline import close_markup
+from NOBITA import app
+from NOBITA.misc import db
+from NOBITA.utils.decorators import AdminRightsCheck
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS
 
 
