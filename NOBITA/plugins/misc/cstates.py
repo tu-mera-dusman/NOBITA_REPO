@@ -1,21 +1,12 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import Client, filters
 import pycountry
-from ANWIVIBES import app 
+from NOBITA import app 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AnwiVibesBot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AARU_MUSIC_XBOT?startgroup=true"),
     ],
 ]
 
