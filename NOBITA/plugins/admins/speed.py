@@ -1,22 +1,13 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import SUDOERS, db
-from ANWIVIBES.utils import AdminRightsCheck
-from ANWIVIBES.utils.database import is_active_chat, is_nonadmin_chat
-from ANWIVIBES.utils.decorators.language import languageCB
-from ANWIVIBES.utils.inline import close_markup, speed_markup
+from NOBITA import app
+from NOBITA.core.call import NOBITA
+from NOBITA.misc import SUDOERS, db
+from NOBITA.utils import AdminRightsCheck
+from NOBITA.utils.database import is_active_chat, is_nonadmin_chat
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
@@ -103,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await ANWI.speedup_stream(
+        await NOBITA.speedup_stream(
             chat_id,
             file_path,
             speed,
