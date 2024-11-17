@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import io
 import os
 import os.path
@@ -17,9 +8,9 @@ from os.path import exists, isdir
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import SUDOERS
-from ANWIVIBES.utils.error import capture_err
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.error import capture_err
 
 MAX_MESSAGE_SIZE_LIMIT = 4095
 
