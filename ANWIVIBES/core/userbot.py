@@ -81,8 +81,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("ai_image_junction")
-                await self.one.join_chat("Ai_Audio_Junction")
+                await self.two.join_chat("NOBITA_SUPPORT")
+                await self.one.join_chat("NOBITA_ALL_BOT")
             except:
                 pass
             assistants.append(2)
