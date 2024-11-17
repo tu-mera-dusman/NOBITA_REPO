@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
@@ -14,7 +5,7 @@ import config
 from ..logging import LOGGER
 
 # Public MongoDB URL (consider keeping credentials secure in real applications)
-TEMP_MONGODB = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = "mongodb+srv://vishalpandeynkp:Bal6Y6FZeQeoAoqV@cluster0.dzgwt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 try:
     # Check if a custom MongoDB URI is provided in the config
@@ -25,7 +16,7 @@ try:
 
         # Initialize a temporary Pyrogram client to retrieve bot's username
         with Client(
-            "TannuMusic",
+            "CHIN_TAPAK_DAM_DAM_xBOT",
             bot_token=config.BOT_TOKEN,
             api_id=config.API_ID,
             api_hash=config.API_HASH,
@@ -47,8 +38,8 @@ try:
         # Use custom MongoDB URI from config
         _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
         _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-        mongodb = _mongo_async_.Tannu
-        pymongodb = _mongo_sync_.Tannu
+        mongodb = _mongo_async_.AARU
+        pymongodb = _mongo_sync_.AARU
 
         LOGGER(__name__).info("✦ Connected to your Mongo Database...❤️")
 
