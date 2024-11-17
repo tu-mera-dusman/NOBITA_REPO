@@ -1,24 +1,15 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from ANWIVIBES import YouTube, app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.database import get_loop
-from ANWIVIBES.utils.decorators import AdminRightsCheck
-from ANWIVIBES.utils.inline import close_markup, stream_markup
-from ANWIVIBES.utils.stream.autoclear import auto_clean
-from ANWIVIBES.utils.thumbnails import get_thumb
+from NOBITA import YouTube, app
+from NOBITA.core.call import NOBITA
+from NOBITA.misc import db
+from NOBITA.utils.database import get_loop
+from NOBITA.utils.decorators import AdminRightsCheck
+from NOBITA.utils.inline import close_markup, stream_markup
+from NOBITA.utils.stream.autoclear import auto_clean
+from NOBITA.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -57,7 +48,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await ANWI.stop_stream(chat_id)
+                                    await NOBITA.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -84,7 +75,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await ANWI.stop_stream(chat_id)
+                    return await NOBITA.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -95,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await ANWI.stop_stream(chat_id)
+                return await NOBITA.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -120,7 +111,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await ANWI.skip_stream(chat_id, link, video=status, image=image)
+            await NOBITA.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -153,7 +144,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await ANWI.skip_stream(chat_id, file_path, video=status, image=image)
+            await NOBITA.skip_stream(chat_id, file_path, video=status, image=image)
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -173,7 +164,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await ANWI.skip_stream(chat_id, videoid, video=status)
+            await NOBITA.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -195,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await ANWI.skip_stream(chat_id, queued, video=status, image=image)
+            await NOBITA.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
