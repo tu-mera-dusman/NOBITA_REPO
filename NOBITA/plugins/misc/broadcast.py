@@ -1,29 +1,20 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 
 from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import SUDOERS
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from ANWIVIBES.utils.decorators.language import language
-from ANWIVIBES.utils.formatters import alpha_to_int
+from NOBITA.utils.decorators.language import language
+from NOBITA.utils.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
@@ -56,7 +47,7 @@ async def braodcast_message(client, message, _):
     IS_BROADCASTING = True
     await message.reply_text(_["broad_1"])
 
-    if "-nobot" not in message.text:
+    if "CHIN_TAPAK_DAM_DAM_XBOT" not in message.text:
         sent = 0
         pin = 0
         chats = []
@@ -126,7 +117,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_5"])
         text = _["broad_6"]
-        from ANWIVIBES.core.userbot import assistants
+        from NOBITA.core.userbot import assistants
 
         for num in assistants:
             sent = 0
