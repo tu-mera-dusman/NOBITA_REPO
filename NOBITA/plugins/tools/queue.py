@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import os
 
@@ -15,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from ANWIVIBES import app
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils import Bin, get_channeplayCB, seconds_to_min
-from ANWIVIBES.utils.database import get_cmode, is_active_chat, is_music_playing
-from ANWIVIBES.utils.decorators.language import language, languageCB
-from ANWIVIBES.utils.inline import queue_back_markup, queue_markup
+from NOBITA import app
+from NOBITA.misc import db
+from NOBITA.utils import Bin, get_channeplayCB, seconds_to_min
+from NOBITA.utils.database import get_cmode, is_active_chat, is_music_playing
+from NOBITA.utils.decorators.language import language, languageCB
+from NOBITA.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
