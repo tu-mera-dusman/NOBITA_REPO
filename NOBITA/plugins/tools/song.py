@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import os
 import future
 import asyncio
@@ -18,7 +9,7 @@ from urllib.parse import urlparse
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 
-from ANWIVIBES import app
+from NOBITA import app
 from pyrogram import filters
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -70,7 +61,7 @@ def download_song(_, message):
             audio_file,
             thumb=thumb_name,
             title=title,
-            caption=f"❖ {title}\n\n● ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ {message.from_user.mention}\n● ᴠɪᴇᴡs ➥ {views}\n● ᴄʜᴀɴɴᴇʟ ➥ {channel_name}\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛ɴ ʏ ᴋ ᴀ ᴀ ࿐",
+            caption=f"❖ {title}\n\n● ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ {message.from_user.mention}\n● ᴠɪᴇᴡs ➥ {views}\n● ᴄʜᴀɴɴᴇʟ ➥ {channel_name}\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @NOBITA_BOT_MAKER",
             duration=dur
         )
         m.delete()
