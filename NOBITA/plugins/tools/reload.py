@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import time
 
@@ -14,12 +5,12 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from ANWIVIBES import app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.database import get_assistant, get_authuser_names, get_cmode
-from ANWIVIBES.utils.decorators import ActualAdminCB, AdminActual, language
-from ANWIVIBES.utils.formatters import alpha_to_int, get_readable_time
+from NOBITA import app
+from NOBITA.core.call import NOBITA
+from NOBITA.misc import db
+from NOBITA.utils.database import get_assistant, get_authuser_names, get_cmode
+from NOBITA.utils.decorators import ActualAdminCB, AdminActual, language
+from NOBITA.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
@@ -62,7 +53,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await ANWI.stop_stream_force(message.chat.id)
+        await NOBITA.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -89,7 +80,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await ANWI.stop_stream_force(chat_id)
+            await NOBITA.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
