@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageNotModified
@@ -17,8 +8,8 @@ from pyrogram.types import (
     Message,
 )
 
-from ANWIVIBES import app
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -34,15 +25,15 @@ from ANWIVIBES.utils.database import (
     skip_off,
     skip_on,
 )
-from ANWIVIBES.utils.decorators.admins import ActualAdminCB
-from ANWIVIBES.utils.decorators.language import language, languageCB
-from ANWIVIBES.utils.inline.settings import (
+from NOBITA.utils.decorators.admins import ActualAdminCB
+from NOBITA.utils.decorators.language import language, languageCB
+from NOBITA.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from ANWIVIBES.utils.inline.start import private_panel
+from NOBITA.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
 
