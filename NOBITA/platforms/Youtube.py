@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import os
 import random
@@ -19,8 +10,8 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from ANWIVIBES.utils.formatters import time_to_seconds
-from ANWIVIBES.utils.database import is_on_off
+from NOBITA.utils.formatters import time_to_seconds
+from NOBITA.utils.database import is_on_off
 
 
 def cookies():
