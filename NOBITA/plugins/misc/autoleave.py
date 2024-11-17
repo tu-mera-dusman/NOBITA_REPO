@@ -1,27 +1,18 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 from datetime import datetime
 
 from pyrogram.enums import ChatType
 
 import config
-from ANWIVIBES import app
-from ANWIVIBES.core.call import ANWI, autoend
-from ANWIVIBES.utils.database import get_client, is_active_chat, is_autoend
+from NOBITA import app
+from NOBITA.core.call import ANWI, autoend
+from NOBITA.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from ANWIVIBES.core.userbot import assistants
+            from NOBITA.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
