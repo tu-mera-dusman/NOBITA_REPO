@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
-
 import asyncio
 import os
 from datetime import datetime, timedelta
@@ -27,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from ANWIVIBES import LOGGER, YouTube, app
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.database import (
+from NOBITA import LOGGER, YouTube, app
+from NOBITA.misc import db
+from NOBITA.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -41,11 +31,11 @@ from ANWIVIBES.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from ANWIVIBES.utils.exceptions import AssistantErr
-from ANWIVIBES.utils.formatters import check_duration, seconds_to_min, speed_converter
-from ANWIVIBES.utils.inline.play import stream_markup
-from ANWIVIBES.utils.stream.autoclear import auto_clean
-from ANWIVIBES.utils.thumbnails import get_thumb
+from NOBITA.utils.exceptions import AssistantErr
+from NOBITA.utils.formatters import check_duration, seconds_to_min, speed_converter
+from NOBITA.utils.inline.play import stream_markup
+from NOBITA.utils.stream.autoclear import auto_clean
+from NOBITA.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -61,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="ANWIVIBES1",
+            name="NOBITA1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -71,7 +61,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="ANWIVIBES2",
+            name="NOBITA2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -81,7 +71,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="ANWIVIBES3",
+            name="NOBITA3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -91,7 +81,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="ANWIVIBES4",
+            name="NOBITA4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -101,7 +91,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="ANWIVIBES5",
+            name="NOBITA5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
