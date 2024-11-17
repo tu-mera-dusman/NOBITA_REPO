@@ -1,17 +1,8 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from os import path
 
 from yt_dlp import YoutubeDL
 
-from ANWIVIBES.utils.formatters import seconds_to_min
+from NOBITA.utils.formatters import seconds_to_min
 
 
 class SoundAPI:
