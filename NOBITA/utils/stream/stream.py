@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
-
 import os
 from random import randint
 from typing import Union
@@ -15,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from ANWIVIBES import Carbon, YouTube, app
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import db
-from ANWIVIBES.utils.database import add_active_video_chat, is_active_chat
-from ANWIVIBES.utils.exceptions import AssistantErr
-from ANWIVIBES.utils.inline import aq_markup, close_markup, stream_markup
-from ANWIVIBES.utils.pastebin import Bin
-from ANWIVIBES.utils.stream.queue import put_queue, put_queue_index
-from ANWIVIBES.utils.thumbnails import get_thumb
+from NOBITA import Carbon, YouTube, app
+from NOBITA.core.call import ANWI
+from NOBITA.misc import db
+from NOBITA.utils.database import add_active_video_chat, is_active_chat
+from NOBITA.utils.exceptions import AssistantErr
+from NOBITA.utils.inline import aq_markup, close_markup, stream_markup
+from NOBITA.utils.pastebin import Bin
+from NOBITA.utils.stream.queue import put_queue, put_queue_index
+from NOBITA.utils.thumbnails import get_thumb
 
 
 async def stream(
