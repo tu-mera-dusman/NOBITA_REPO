@@ -1,18 +1,9 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ANWIVIBES import app
-from ANWIVIBES.misc import SUDOERS, db
-from ANWIVIBES.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS, db
+from NOBITA.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
