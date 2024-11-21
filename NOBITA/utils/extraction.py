@@ -1,16 +1,7 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message, User
 
-from ANWIVIBES import app
+from NOBITA import app
 
 
 async def extract_user(m: Message) -> User:
