@@ -1,16 +1,7 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import math
 from config import SUPPORT_CHAT, OWNER_USERNAME
 from pyrogram.types import InlineKeyboardButton
-from ANWIVIBES.utils.formatters import time_to_seconds
+from NOBITA.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -78,7 +69,7 @@ def stream_markup_timer(_, chat_id, played, dur):
 
                 text="ᴜᴘᴅᴀᴛᴇ",
 
-                url=f"t.me/ai_image_junction",
+                url=f"t.me/NOBITA_SUPPORT",
 
             ),
             InlineKeyboardButton(
@@ -107,7 +98,7 @@ def stream_markup(_, chat_id):
 
                 text="ᴜᴘᴅᴀᴛᴇ",
 
-                url=f"t.me/ai_image_junction",
+                url=f"t.me/NOBITA_SUPPORT",
 
             ),
             InlineKeyboardButton(
