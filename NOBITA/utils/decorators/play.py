@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 
 from pyrogram.enums import ChatMemberStatus
@@ -18,9 +9,9 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ANWIVIBES import YouTube, app
-from ANWIVIBES.misc import SUDOERS
-from ANWIVIBES.utils.database import (
+from NOBITA import YouTube, app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -29,7 +20,7 @@ from ANWIVIBES.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from ANWIVIBES.utils.inline import botplaylist_markup
+from NOBITA.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
 
