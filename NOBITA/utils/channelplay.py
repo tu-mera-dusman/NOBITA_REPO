@@ -1,14 +1,5 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
-from ANWIVIBES import app
-from ANWIVIBES.utils.database import get_cmode
+from NOBITA import app
+from NOBITA.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
