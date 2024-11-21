@@ -1,18 +1,9 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import random
 from typing import Dict, List, Union
 
-from ANWIVIBES import userbot
-from ANWIVIBES.core.mongo import mongodb
-from ANWIVIBES.utils.mongo import db
+from NOBITA import userbot
+from NOBITA.core.mongo import mongodb
+from NOBITA.utils.mongo import db
 
 afkdb = db.afk
 authdb = mongodb.adminauth
@@ -86,7 +77,7 @@ async def set_assistant_new(chat_id, number):
 
 
 async def set_assistant(chat_id):
-    from ANWIVIBES.core.userbot import assistants
+    from NOBITA.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -100,7 +91,7 @@ async def set_assistant(chat_id):
 
 
 async def get_assistant(chat_id: int) -> str:
-    from ANWIVIBES.core.userbot import assistants
+    from NOBITA.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
@@ -155,7 +146,7 @@ async def get_afk_users() -> list:
   
 
 async def set_calls_assistant(chat_id):
-    from ANWIVIBES.core.userbot import assistants
+    from NOBITA.core.userbot import assistants
 
     ran_assistant = random.choice(assistants)
     assistantdict[chat_id] = ran_assistant
@@ -168,7 +159,7 @@ async def set_calls_assistant(chat_id):
 
 
 async def group_assistant(self, chat_id: int) -> int:
-    from ANWIVIBES.core.userbot import assistants
+    from NOBITA.core.userbot import assistants
 
     assistant = assistantdict.get(chat_id)
     if not assistant:
