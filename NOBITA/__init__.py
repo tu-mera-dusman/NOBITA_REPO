@@ -1,17 +1,8 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
-from ANWIVIBES.core.bot import Anwi
-from ANWIVIBES.core.dir import dirr
-from ANWIVIBES.core.git import git
-from ANWIVIBES.core.userbot import Userbot
-from ANWIVIBES.misc import dbb, heroku
+from NOBITA.core.bot import NOBITA
+from NOBITA.core.dir import dirr
+from NOBITA.core.git import git
+from NOBITA.core.userbot import Userbot
+from NOBITA.misc import dbb, heroku
 
 from .logging import LOGGER
 
@@ -20,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Anwi()
+app = NOBITA()
 userbot = Userbot()
 
 
