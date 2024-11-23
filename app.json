@@ -1,13 +1,13 @@
 {
-    "name": "ANWI VIBES",
+    "name": "NOBITA",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://files.catbox.moe/ck1ua3.jpg",
+    "logo": "https://files.catbox.moe/mgvxul.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "AnwiVibes",
-    "AnwiVibesBot",
+    "NOBITA",
+    "AaruMusiocBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -34,11 +34,11 @@
       },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "1679112664",
+        "value": "6972508083",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session.",
+        "description": "A Pyrogram v2 String Session. - @NOBITA_STRING_SESSION_BOT",
         "value": "",
         "required": true
       },
