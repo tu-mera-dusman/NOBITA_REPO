@@ -1,18 +1,9 @@
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import time
 
 import psutil
 
-from ANWIVIBES.misc import _boot_
-from ANWIVIBES.utils.formatters import get_readable_time
+from NOBITA.misc import _boot_
+from NOBITA.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
