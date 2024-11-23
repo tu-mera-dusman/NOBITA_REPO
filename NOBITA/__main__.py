@@ -1,13 +1,3 @@
-
-#
-# Copyright (C) 2024 by IamDvis@Github, < https://github.com/IamDvis >.
-#
-# This file is part of < https://github.com/IamDvis/DV-VIBES > project,
-# and is released under the MIT License.
-# Please see < https://github.com/IamDvis/DV-VIBES/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import importlib
 
@@ -15,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from ANWIVIBES import LOGGER, app, userbot
-from ANWIVIBES.core.call import ANWI
-from ANWIVIBES.misc import sudo
-from ANWIVIBES.plugins import ALL_MODULES
-from ANWIVIBES.utils.database import get_banned_users, get_gbanned
+from NOBITA import LOGGER, app, userbot
+from NOBITA.core.call import NOBITA
+from NOBITA.misc import sudo
+from NOBITA.plugins import ALL_MODULES
+from NOBITA.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -45,27 +35,27 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("ANWIVIBES.plugins" + all_module)
-    LOGGER("ANWIVIBES.plugins").info("✦ Successfully Imported Modules...💞")
+        importlib.import_module("NOBITA.plugins" + all_module)
+    LOGGER("NOBITA.plugins").info("✦ Successfully Imported Modules...💞")
     await userbot.start()
-    await ANWI.start()
+    await NOBITA.start()
     try:
-        await ANWI.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await NOBITA.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("ANWIVIBES").error(
+        LOGGER("NOBITA").error(
             "✦ Please turn on the videochat of your log group\channel.\n\n✦ Stopping Bot...💣"
         )
         exit()
     except:
         pass
-    await ANWI.decorators()
-    LOGGER("ANWIVIBES").info(
-        "✦ Created By ➥ The Dvis...🐝"
+    await NOBITA.decorators()
+    LOGGER("NOBITA").info(
+        "✦ Created By ➥ NOBITA BOT MAKER...🐝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("ANWIVIBES").info("❖ Stopping ANWI VIBES Bot...💌")
+    LOGGER("NOBITA").info("❖ Stopping NOBITA BOT MAKER ..💌")
 
 
 if __name__ == "__main__":
