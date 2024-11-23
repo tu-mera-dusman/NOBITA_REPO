@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from NOBITA import LOGGER, app, userbot
-from NOBITA.core.call import NOBITA
+from NOBITA.core.call import NOBI
 from NOBITA.misc import sudo
 from NOBITA.plugins import ALL_MODULES
 from NOBITA.utils.database import get_banned_users, get_gbanned
